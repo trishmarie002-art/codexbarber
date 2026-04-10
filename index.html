@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J 2Blurry | Premium Barber Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">J 2Blurry</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#booking">Book</a>
+      <a class="cta-nav" href="tel:2105088599">Call Jacob</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline class="hero-video" aria-label="Barber cutting hair in shop">
+      <source src="https://cdn.coverr.co/videos/coverr-barber-shaving-beard-1579/1080p.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <p class="kicker">San Antonio-Style Precision Cuts</p>
+      <h1>J 2Blurry</h1>
+      <p class="subtitle">Book with <strong>Jacob</strong> today and leave crisp, clean, and camera-ready.</p>
+      <div class="hero-cta-group">
+        <a href="#booking" class="btn btn-primary pulse">Book Your Cut Now</a>
+        <a href="tel:2105088599" class="btn btn-outline">Call 210-508-8599</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="value strip reveal">
+    <div>Walk-ins welcome when available</div>
+    <div>Late-hours appointments</div>
+    <div>Fast fades, sharp lines, pro service</div>
+  </section>
+
+  <section id="services" class="section reveal">
+    <h2>Signature Services</h2>
+    <div class="cards">
+      <article class="card tilt">
+        <h3>Blur Fade + Lineup</h3>
+        <p>Precision blend with razor-sharp finishing detail.</p>
+        <span>$40</span>
+      </article>
+      <article class="card tilt">
+        <h3>Beard Sculpt</h3>
+        <p>Shape, define, and detail your beard for a clean profile.</p>
+        <span>$25</span>
+      </article>
+      <article class="card tilt">
+        <h3>Full VIP Cut</h3>
+        <p>Haircut, beard work, hot towel finish, and styling.</p>
+        <span>$60</span>
+      </article>
+    </div>
+  </section>
+
+  <section id="booking" class="section booking reveal">
+    <h2>Book with Jacob</h2>
+    <p>Select your service and preferred date/time. Jacob will lock you in fast.</p>
+    <form id="bookingForm" class="booking-form">
+      <label>
+        Full Name
+        <input required type="text" name="name" placeholder="Your name" />
+      </label>
+      <label>
+        Phone Number
+        <input required type="tel" name="phone" placeholder="(210) 000-0000" />
+      </label>
+      <label>
+        Service
+        <select required name="service">
+          <option value="">Select one</option>
+          <option>Blur Fade + Lineup</option>
+          <option>Beard Sculpt</option>
+          <option>Full VIP Cut</option>
+        </select>
+      </label>
+      <label>
+        Date
+        <input required type="date" name="date" />
+      </label>
+      <label>
+        Time
+        <input required type="time" name="time" />
+      </label>
+      <label>
+        Notes
+        <textarea name="notes" rows="3" placeholder="Any style requests?"></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary pulse">Reserve Appointment</button>
+    </form>
+    <p id="bookingMessage" role="status" aria-live="polite"></p>
+    <div class="booking-actions">
+      <a class="btn btn-outline" href="tel:2105088599">Need it faster? Call Jacob</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h3>J 2Blurry</h3>
+    <p>Master barber: Jacob</p>
+    <a href="tel:2105088599">210-508-8599</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
